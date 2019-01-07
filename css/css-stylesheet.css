@@ -1,0 +1,65 @@
+html{
+  font-family:arial, "lucida console", sans-serif;
+  text-align: justify;
+}
+
+body {
+  background-image: url("../images/background3.jpeg");
+}
+
+article {
+  clear: left;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+p {
+  clear: left;
+}
+
+dl > dt{
+  margin-top: 20px;
+  font-weight: 700;
+  clear: left;
+}
+
+nav {
+  margin-bottom: 100px;
+}
+
+ul {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-left: 25px;
+  margin-right: 100px;
+}

@@ -1,0 +1,38 @@
+body {
+  background-image: url("../images/background3.jpeg");
+}
+
+html{
+  font-family:arial, "lucida console", sans-serif;
+}
+
+dl > dt{
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+ text-align: center;
+}
+
+ul {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
