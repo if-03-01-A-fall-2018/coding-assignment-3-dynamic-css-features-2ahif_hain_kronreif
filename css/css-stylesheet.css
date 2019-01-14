@@ -54,6 +54,14 @@ li a {
   text-decoration: none;
 }
 
+li span {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 img {
   float: left;
   margin-right: 20px;
@@ -66,7 +74,6 @@ article {
   margin-right: 100px;
 }
 
-<style>
 .dropdown {
   position: relative;
   display: inline-block;
@@ -75,14 +82,14 @@ article {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  color:white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-</style>
