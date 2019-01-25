@@ -33,7 +33,7 @@ nav {
 }
 
 ul {
-  background-image: linear-gradient(to right, #3a3a3a, #848484);
+  background-color: #aaaaaa;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -42,6 +42,21 @@ ul {
   top: 0;
   right: 0;
   left: 0;
+  animation-name: colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorchange
+{
+0%   { background-color: #969696;
+}
+
+50% { background-color: #848484;
+}
+
+100%   { background-color: #969696;
+}
 }
 
 li {
