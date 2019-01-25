@@ -21,9 +21,6 @@ h1{
 p {
   clear: left;
 }
-a {
-  color: white;
-}
 
 dl > dt{
   margin-top: 20px;
@@ -36,7 +33,7 @@ nav {
 }
 
 ul {
-  background-color: #333;
+  background-image: linear-gradient(to right, #3a3a3a, #848484);
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -47,19 +44,11 @@ ul {
   left: 0;
 }
 
-nav > ul > li {
+li {
   float: left;
 }
 
 li a {
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li span {
   color: white;
   display: block;
   text-align: center;
@@ -77,55 +66,4 @@ img {
 article {
   margin-left: 25px;
   margin-right: 100px;
-}
-
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: #333;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover {
-  background-color: red;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: none;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 100;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropbtn:hover~.dropdown {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #1a1a1a;
 }
