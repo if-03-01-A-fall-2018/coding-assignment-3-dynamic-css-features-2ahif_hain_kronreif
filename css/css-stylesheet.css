@@ -1,10 +1,11 @@
 html{
   font-family:arial, "lucida console", sans-serif;
   text-align: justify;
+  color: #e6e6e6
 }
 
 body {
-  background-image: url("../images/background3.jpeg");
+  background-color: #595959;
 }
 
 article {
@@ -49,13 +50,13 @@ ul {
 
 @keyframes colorchange
 {
-0%   { background-color: #969696;
+0%   { background-color: #a6a6a6;
 }
 
-50% { background-color: #848484;
+50% { background-color: #000000;
 }
 
-100%   { background-color: #969696;
+100%   { background-color: #a6a6a6;
 }
 }
 
