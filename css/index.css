@@ -86,28 +86,31 @@ li > a:hover {
 
 .communication div {
   position: sticky;
-  bottom: 0;
+  bottom: 20%;
+}
+
+.communication div:nth-of-type(1) {
+  margin-top: -100;
 }
 
 .communication div:nth-of-type(2) {
   height: 20px;
   width: 20px;
   animation-name: message;
-  animation-duration: 5s;
-  animation-delay: -2.7s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
   position: relative;
-  top: -95px;
+  top: -160px;
 }
 
 .communication div:nth-of-type(3){
   float: right;
   position: relative;
-  margin-top: -140px;
+  margin-top: -200px;
 }
 
 @keyframes message {
-  0%   {left:90%;}
-  50%  {left:5%;}
-  100% {left:90%;}
+  from {left: 5%;}
+  to {left: 90%;}
 }
