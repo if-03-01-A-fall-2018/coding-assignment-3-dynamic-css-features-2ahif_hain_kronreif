@@ -43,25 +43,16 @@ ul {
   top: 0;
   right: 0;
   left: 0;
-  animation-name: colorchange;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes colorchange
-{
-0%   { background-color: #a6a6a6;
-}
-
-50% { background-color: #000000;
-}
-
-100%   { background-color: #a6a6a6;
-}
+  background-image: linear-gradient(to right, #4d4d4d, #a6a6a6);
 }
 
 li {
   float: left;
+}
+
+.chat {
+  background-image: linear-gradient(to right, #333333);
+  
 }
 
 li a {
