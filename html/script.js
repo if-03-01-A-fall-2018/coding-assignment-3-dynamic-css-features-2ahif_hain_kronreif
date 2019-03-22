@@ -1,6 +1,6 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
-const CLIENT_ID = '4cNswoNqM2wVFHPg';
+const CLIENT_ID = '5to16knVfOjA0BSQ';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -70,7 +70,9 @@ function getRandomName() {
 }
 
 function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  let number = Math.floor(Math.random() * Math.floor(11));
+  const colors = ["#00ff00", "#00ccff", "#ff9933", "#ffff00", "#9966ff", "#009999", "#ffffff", "#ccff99", "#ff3300", "#99ccff", "#ffcccc"]
+  return colors[number];
 }
 
 //------------- DOM STUFF
