@@ -1,15 +1,16 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = '5to16knVfOjA0BSQ';
-
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getRandomName(),
+    name: getName(),
     color: getRandomColor(),
   },
 });
 
 let members = [];
+let names = [100];
+let nameIndex = 0;
 
 drone.on('open', error => {
   if (error) {
@@ -58,15 +59,10 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getRandomName() {
-  var a = document.form.name.value;
-  if(a=="")
-  {
-    alert("Please Enter Your Name");
-    document.form.name.focus();
-    return false;
-  }
-  return a;
+function getName() {
+  var name = "";
+  name = document.querySelector("#username").value;
+  return name;
 }
 
 function getRandomColor() {

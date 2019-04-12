@@ -24,7 +24,7 @@
       right: 0;
       left: 0;
       position: absolute;
-      margin-top: 3%;
+      margin-top: 10%;
     }
 
     .members-list {
@@ -36,13 +36,13 @@
       right: 0;
       left: 0;
       position: absolute;
-      margin-top: 7.5%
+      margin-top: 14.5%
     }
 
     .messages {
       flex-shrink: 1;
       overflow: auto;
-      margin-top: -3%;
+      margin-top: 2%;
     }
 
     .message {
