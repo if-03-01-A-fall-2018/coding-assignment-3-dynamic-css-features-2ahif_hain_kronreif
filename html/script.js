@@ -59,10 +59,18 @@ drone.on('error', error => {
   console.error(error);
 });
 
+function getNameIndex() {
+  let i = 0;
+  while (names[i] != null) {
+    i++;
+  }
+  return i;
+}
+
 function getName() {
-  var name = "";
-  name = document.querySelector("#username").value;
-  return name;
+  const index = getNameIndex();
+  names[index] = document.querySelector("#username").value;
+  return names[index];
 }
 
 function getRandomColor() {
