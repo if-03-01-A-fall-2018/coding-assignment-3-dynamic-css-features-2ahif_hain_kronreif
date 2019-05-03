@@ -4,7 +4,7 @@ const CLIENT_ID = '4cNswoNqM2wVFHPg';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getRandomName(),
+    name: getName(),
     color: getRandomColor(),
   },
 });
@@ -58,18 +58,15 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getRandomName() {
-  const adjs = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
-  const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"];
-  return (
-    adjs[Math.floor(Math.random() * adjs.length)] +
-    "_" +
-    nouns[Math.floor(Math.random() * nouns.length)]
-  );
+function getName() {
+  var url = new URL(window.location.href);
+  return url.searchParams.get("username");
 }
 
 function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  let number = Math.floor(Math.random() * Math.floor(11));
+  const colors = ["#00ff00", "#00ccff", "#ff9933", "#ffff00", "#9966ff", "#009999", "#ffffff", "#ccff99", "#ff3300", "#99ccff", "#ffcccc"]
+  return colors[number];
 }
 
 //------------- DOM STUFF
