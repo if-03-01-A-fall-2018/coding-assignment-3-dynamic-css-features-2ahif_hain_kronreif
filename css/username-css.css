@@ -1,0 +1,54 @@
+html{
+  font-family:arial, "lucida console", sans-serif;
+  text-align: justify;
+  color: #e6e6e6
+}
+
+body {
+  background-color: #595959;
+}
+
+nav {
+  margin-bottom: 100px;
+}
+
+ul {
+  background-color: #aaaaaa;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #4d4d4d, #a6a6a6);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #b3b3b3
+}
+
+.username-text {
+  margin-top: -10px;
+  text-align: center;
+  font-size: 40px
+
+}
+
+.username-input {
+  margin-left: 50%;
+  font-size: 40px;
+}

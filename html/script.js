@@ -64,8 +64,8 @@ function getName() {
 }
 
 function getRandomColor() {
-  let number = Math.floor(Math.random() * Math.floor(11));
-  const colors = ["#00ff00", "#00ccff", "#ff9933", "#ffff00", "#9966ff", "#009999", "#ffffff", "#ccff99", "#ff3300", "#99ccff", "#ffcccc"]
+  let number = Math.floor(Math.random() * Math.floor(10));
+  const colors = ["#00ff00", "#00ccff", "#ff9933", "#ffff00", "#9966ff", "#009999", "#ccff99", "#ff3300", "#99ccff", "#ffcccc"]
   return colors[number];
 }
 
