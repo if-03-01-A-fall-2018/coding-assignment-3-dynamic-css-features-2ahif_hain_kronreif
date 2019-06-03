@@ -1,6 +1,6 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
-const CLIENT_ID = '4cNswoNqM2wVFHPg';
+const CLIENT_ID = '5to16knVfOjA0BSQ';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
@@ -32,12 +32,10 @@ drone.on('open', error => {
 
   room.on('member_join', member => {
     members.push(member);
-    addMessageToListDOM("entered the chat", member);
     updateMembersDOM();
   });
 
   room.on('member_leave', ({id}) => {
-    addMessageToListDOM("left the chat", member);
     const index = members.findIndex(member => member.id === id);
     members.splice(index, 1);
     updateMembersDOM();
