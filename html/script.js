@@ -83,7 +83,7 @@ DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
   const value = DOM.input.value;
-  if (value === '') {
+  if (value === '' || value === ' ') {
     return;
   }
   DOM.input.value = '';
