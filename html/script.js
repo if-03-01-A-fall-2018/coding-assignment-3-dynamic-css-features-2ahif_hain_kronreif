@@ -1,10 +1,10 @@
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
-const CLIENT_ID = '5to16knVfOjA0BSQ';
+const CLIENT_ID = 'SVqiEI4PpW9snKvo';
 
 const drone = new ScaleDrone(CLIENT_ID, {
   data: { // Will be sent out as clientData via events
-    name: getName(),
+    name: getRandomName(),
     color: getRandomColor(),
   },
 });
@@ -31,7 +31,9 @@ drone.on('open', error => {
   });
 
   room.on('member_join', member => {
+
     members.push(member);
+
     updateMembersDOM();
   });
 
@@ -58,7 +60,7 @@ drone.on('error', error => {
   console.error(error);
 });
 
-function getName() {
+function getRandomName() {
   var url = new URL(window.location.href);
   return url.searchParams.get("username");
 }
@@ -83,7 +85,7 @@ DOM.form.addEventListener('submit', sendMessage);
 
 function sendMessage() {
   const value = DOM.input.value;
-  if (value === '' || value === ' ') {
+  if (value === '') {
     return;
   }
   DOM.input.value = '';
