@@ -95,6 +95,14 @@ function sendMessage() {
   });
 }
 
+function updateMembersDOM() {
+  DOM.membersCount.innerText = `${members.length} users in room:`;
+  DOM.membersList.innerHTML = '';
+  members.forEach(member =>
+    DOM.membersList.appendChild(createMemberElement(member))
+  );
+}
+
 function createMemberElement(member) {
   const { name, color } = member.clientData;
   const el = document.createElement('div');
@@ -102,14 +110,6 @@ function createMemberElement(member) {
   el.className = 'member';
   el.style.color = color;
   return el;
-}
-
-function updateMembersDOM() {
-  DOM.membersCount.innerText = `${members.length} users in room:`;
-  DOM.membersList.innerHTML = '';
-  members.forEach(member =>
-    DOM.membersList.appendChild(createMemberElement(member))
-  );
 }
 
 function createMessageElement(text, member) {
